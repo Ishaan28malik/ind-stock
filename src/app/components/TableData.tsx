@@ -35,8 +35,8 @@ const TableDataCard: React.FC<TableDataCardProps> = ({
     };
 
     return (
-        <div className="flex flex-row items-center justify-center min-h-screen">
-            <div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+            <div className="w-full max-w-md mx-auto p-4">
                 {loading ? (
                     <p>Loading...</p>
                 ) : searchResults.length > 0 ? (
